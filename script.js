@@ -66,3 +66,9 @@ play.addEventListener('click', toggleVideoStatus);
 stop.addEventListener('click', stopVideo);
 
 progress.addEventListener('change', setVideoProgress);
+
+
+const controls = document.querySelector('.controls');
+setInterval(() => {
+	controls.style.width = video.clientWidth + 6 + 'px';
+}, 100)
